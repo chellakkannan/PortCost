@@ -1,0 +1,4 @@
+C:\Users\CM\documents\visual studio 2017\Projects\PortCost\PortCostApp.Core\bin\Debug\PortCostApp.Core.dll
+C:\Users\CM\documents\visual studio 2017\Projects\PortCost\PortCostApp.Core\bin\Debug\PortCostApp.Core.pdb
+C:\Users\CM\documents\visual studio 2017\Projects\PortCost\PortCostApp.Core\obj\Debug\PortCostApp.Core.dll
+C:\Users\CM\documents\visual studio 2017\Projects\PortCost\PortCostApp.Core\obj\Debug\PortCostApp.Core.pdb

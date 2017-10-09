@@ -1,0 +1,12 @@
+C:\Users\CM\documents\visual studio 2017\Projects\PortCost\PortCostApp.Infrastructure\bin\Debug\PortCostApp.Infrastructure.dll.config
+C:\Users\CM\documents\visual studio 2017\Projects\PortCost\PortCostApp.Infrastructure\bin\Debug\PortCostApp.Infrastructure.dll
+C:\Users\CM\documents\visual studio 2017\Projects\PortCost\PortCostApp.Infrastructure\bin\Debug\PortCostApp.Infrastructure.pdb
+C:\Users\CM\documents\visual studio 2017\Projects\PortCost\PortCostApp.Infrastructure\bin\Debug\EntityFramework.dll
+C:\Users\CM\documents\visual studio 2017\Projects\PortCost\PortCostApp.Infrastructure\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\CM\documents\visual studio 2017\Projects\PortCost\PortCostApp.Infrastructure\bin\Debug\PortCostApp.Core.dll
+C:\Users\CM\documents\visual studio 2017\Projects\PortCost\PortCostApp.Infrastructure\bin\Debug\PortCostApp.Core.pdb
+C:\Users\CM\documents\visual studio 2017\Projects\PortCost\PortCostApp.Infrastructure\bin\Debug\EntityFramework.xml
+C:\Users\CM\documents\visual studio 2017\Projects\PortCost\PortCostApp.Infrastructure\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\CM\documents\visual studio 2017\Projects\PortCost\PortCostApp.Infrastructure\obj\Debug\PortCostApp.Infrastructure.csprojResolveAssemblyReference.cache
+C:\Users\CM\documents\visual studio 2017\Projects\PortCost\PortCostApp.Infrastructure\obj\Debug\PortCostApp.Infrastructure.dll
+C:\Users\CM\documents\visual studio 2017\Projects\PortCost\PortCostApp.Infrastructure\obj\Debug\PortCostApp.Infrastructure.pdb

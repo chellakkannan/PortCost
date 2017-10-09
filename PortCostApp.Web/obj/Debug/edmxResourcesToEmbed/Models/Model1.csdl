@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DigitalDocModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="PortCostCategory">
+    <Key>
+      <PropertyRef Name="PortCostCategoryID" />
+    </Key>
+    <Property Name="PortCostCategoryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PortCostCategoryName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PortCostSubCategory">
+    <Key>
+      <PropertyRef Name="PortCostSubCategoryID" />
+    </Key>
+    <Property Name="PortCostSubCategoryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PortCostSubCategoryName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="DigitalDocEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="PortCostCategories" EntityType="Self.PortCostCategory" />
+    <EntitySet Name="PortCostSubCategories" EntityType="Self.PortCostSubCategory" />
+  </EntityContainer>
+</Schema>

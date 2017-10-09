@@ -1,0 +1,57 @@
+﻿@model IEnumerable<PortCostApp.Core.PortCost>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.VesselCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PortCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PortCostCategory)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PortCostSubCategory)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cost)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.VesselCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PortCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PortCostCategory)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PortCostSubCategory)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cost)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DigitalDocModelStoreContainer" CdmEntityContainer="DigitalDocEntitiesMasterData">
+    <EntitySetMapping Name="Currencies">
+      <EntityTypeMapping TypeName="DigitalDocModel.Currency">
+        <MappingFragment StoreEntitySet="Currency">
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+          <ScalarProperty Name="CurrencyCode" ColumnName="CurrencyCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PortCostCategories">
+      <EntityTypeMapping TypeName="DigitalDocModel.PortCostCategory">
+        <MappingFragment StoreEntitySet="PortCostCategory">
+          <ScalarProperty Name="PortCostCategoryID" ColumnName="PortCostCategoryID" />
+          <ScalarProperty Name="PortCostCategoryName" ColumnName="PortCostCategoryName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PortCostSubCategories">
+      <EntityTypeMapping TypeName="DigitalDocModel.PortCostSubCategory">
+        <MappingFragment StoreEntitySet="PortCostSubCategory">
+          <ScalarProperty Name="PortCostSubCategoryID" ColumnName="PortCostSubCategoryID" />
+          <ScalarProperty Name="PortCostSubCategoryName" ColumnName="PortCostSubCategoryName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

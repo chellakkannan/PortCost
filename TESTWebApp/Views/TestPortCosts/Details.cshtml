@@ -1,0 +1,58 @@
+﻿@model PortCostApp.Core.PortCost
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PortCost</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.VesselCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VesselCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PortCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PortCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PortCostCategory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PortCostCategory)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PortCostSubCategory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PortCostSubCategory)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cost)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

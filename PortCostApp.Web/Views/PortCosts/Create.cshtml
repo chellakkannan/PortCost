@@ -1,0 +1,89 @@
+﻿@model PortCostApp.Core.PortCost
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>PortCost</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.VesselCode, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.VesselCode, new { htmlAttributes = new { @class = "text-control" } })
+                @Html.ValidationMessageFor(model => model.VesselCode, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.PortCode, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.PortCode, new { htmlAttributes = new { @class = "text-control" } })
+                @Html.ValidationMessageFor(model => model.PortCode, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.PortCostCategory, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("PortCostCategory", ViewBag.portCostCategoryName as SelectList, "Select Port Cost Category", new { @class = "dropdown-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.PortCostSubCategory, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("PortCostSubCategory", ViewBag.portCostSubCategoryName as SelectList, "Select Port Cost Sub Category", new { @class = "dropdown-control" })
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Cost, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Cost, new { htmlAttributes = new { @class = "text-control" } })
+                @Html.ValidationMessageFor(model => model.Cost, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CurrencyCode, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("CurrencyCode", ViewBag.CurrencyCode as SelectList, "Select Currency Code", new { @class = "dropdown-control" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ContractID, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ContractID, new { htmlAttributes = new { @class = "text-control" } })
+                @Html.ValidationMessageFor(model => model.ContractID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ContractFilePath, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ContractFilePath, new { htmlAttributes = new { @class = "text-control" } })
+                @Html.ValidationMessageFor(model => model.ContractFilePath, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

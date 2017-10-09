@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DigitalDocModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Currency">
+    <Key>
+      <PropertyRef Name="CurrencyID" />
+    </Key>
+    <Property Name="CurrencyID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CurrencyCode" Type="varchar" MaxLength="5" />
+  </EntityType>
+  <EntityType Name="PortCostCategory">
+    <Key>
+      <PropertyRef Name="PortCostCategoryID" />
+    </Key>
+    <Property Name="PortCostCategoryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PortCostCategoryName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PortCostSubCategory">
+    <Key>
+      <PropertyRef Name="PortCostSubCategoryID" />
+    </Key>
+    <Property Name="PortCostSubCategoryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PortCostSubCategoryName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="DigitalDocModelStoreContainer">
+    <EntitySet Name="Currency" EntityType="Self.Currency" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PortCostCategory" EntityType="Self.PortCostCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PortCostSubCategory" EntityType="Self.PortCostSubCategory" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
